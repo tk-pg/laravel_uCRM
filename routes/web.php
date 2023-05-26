@@ -39,6 +39,7 @@ Route::get('/inertia/show/{id}', [InertiaTestController::class, 'show'])->name('
 Route::delete('/inertia/{id}', [InertiaTestController::class, 'delete'])->name('inertia.delete');
 
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
